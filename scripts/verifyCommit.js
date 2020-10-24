@@ -2,6 +2,7 @@
 
 const chalk = require('chalk')
 const msgPath = process.env.GIT_PARAMS
+console.log('msgPath >>> ', msgPath);
 const msg = require('fs').readFileSync(msgPath, 'utf-8').trim()
 
 const releaseRE = /^v\d/
